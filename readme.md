@@ -45,6 +45,8 @@ node index.js
 POST /send
 ```
 
+The data payload can be JSON or URL-encoded (x-www-form-urlencoded).
+
 * `fromName` - name of sender
 * `subject` - email subject
 * `body` - plain-text email body
