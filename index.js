@@ -32,7 +32,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
-    res.send('ok');
+    res.send('ready');
     // res.send(
     //     '<form method=post action=/send>' +
     //     '<input type=text name=fromName placeholder=fromName value=Test>' +
@@ -87,7 +87,7 @@ app.post('/send', (req, res) => {
             return;
         }
         console.log('Message %s sent: %s', info.messageId, info.response);
-        res.send('ok');
+        res.send('sent');
     });
 });
 
